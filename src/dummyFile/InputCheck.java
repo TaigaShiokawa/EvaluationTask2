@@ -7,7 +7,7 @@ public class InputCheck {
 	public InputCheck(String str) {
 		if (str == null) {
 			//nullの場合は空文字を渡すためにthisキーワードをつけた。
-			//isNumeric()でisEmptyを使って空文字チェックする。するとfalseが返り、コンソールに「数値のみ入力してください。」と出る。
+			//isNumeric()でisEmptyを使って空文字チェックする。数値に変換する作業が走るため、コンソールに「100MB以下のバイト数(104857600)を指定してください」と出る。
 			this.str = "";
 		}
 		/*thisキーワードを指定しないと、java.lang.NullPointerExceptionが起きた。
