@@ -15,7 +15,7 @@ public class InputCheck {
 		 * thisキーワードは、ローカル変数とフィールドを区別する。
 		 * */
 		this.str = replaceFullWidthWithHalfWidth(str); 
-		//必要かわからないけど、親切心で一応、全角を半角に置換しました。
+		//必要かわからないけど、ECサイト制作で使用した技術が使えると思い、全角を半角に置換しました。
 	}
 
 	protected boolean isNumeric() {
