@@ -10,7 +10,7 @@ public class InputCheck {
 			//isNumeric()でisEmptyを使って空文字チェックする。するとfalseが返り、コンソールに「数値のみ入力してください。」と出る。
 			this.str = "";
 		}
-		/*thisキーワードを指定しないと、java.lang.NullPointerExceptionが起こる。
+		/*thisキーワードを指定しないと、java.lang.NullPointerExceptionが起きた。
 		 * this指定が無いとコンストラクタの引数が自分自身を代入し27行目の条件式「this.str.length()」がnullになり例外が起こったため、thisキーワードをつけて解決した。
 		 * thisキーワードは、ローカル変数とフィールドを区別する。
 		 * */
