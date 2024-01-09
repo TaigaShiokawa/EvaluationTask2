@@ -6,7 +6,7 @@ public class InputCheck {
 
 	public InputCheck(String str) {
 		if (str == null) {
-			//nullの場合は空文字を渡すためにthisキーワードをつける。
+			//nullの場合は空文字を渡すためにthisキーワードをつけた。
 			//isNumeric()でisEmptyを使って空文字チェックする。するとfalseが返り、コンソールに「数値のみ入力してください。」と出る。
 			this.str = "";
 		}
