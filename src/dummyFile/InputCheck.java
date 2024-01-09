@@ -34,7 +34,7 @@ public class InputCheck {
 	}
 
 	protected boolean checkSize() {
-		//数値の置換の際、空文字だとNumberFormatExceptionが発生したため、まず、空文字チェックをしてから、this.strが10以下なら整数に変換するようにした。
+		//数値の置換の際、空文字だとNumberFormatExceptionが発生したため空文字も同時に制御した。
 	    if (!this.str.isEmpty() && this.str.length() <= 10) {
 	        try {
 	            if (Math.abs(Integer.parseInt(this.str)) <= 1024 * 1024 * 100) {
